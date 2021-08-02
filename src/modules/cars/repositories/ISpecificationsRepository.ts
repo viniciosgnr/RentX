@@ -6,8 +6,8 @@ interface ICreateSpecification {
 }
 
 interface ISpecificationsRepository {
-  create({ name, description }: ICreateSpecification): void;
-  findByName(name: string): Specification;
+  create({ name, description }: ICreateSpecification): Promise<void>;
+  findByName(name: string): Promise<Specification>;
 }
 
 export { ISpecificationsRepository, ICreateSpecification };
