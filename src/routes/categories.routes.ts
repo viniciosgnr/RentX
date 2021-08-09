@@ -1,6 +1,5 @@
 import { Router } from "express";
 import multer from "multer";
-import { v4 as uuid } from "uuid";
 
 import { CreateCategoryController } from "../modules/cars/useCases/createCategory/CreateCategoryController";
 import { ImportCategoryController } from "../modules/cars/useCases/importCategory/ImportCategoryController";
